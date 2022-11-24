@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # First-Capstone
 =======
 <a name="readme-top"></a>
@@ -36,7 +36,7 @@
 
 **[Capstone-Project: Summer BootCamp 2023]** is about crash courses in Computer Science during Summer. People can visit the website to see the details of the program.
 
-[Loom Video Presentation]()
+[Loom Video Presentation](https://www.loom.com/share/8265989651e04953b74b70498aef592e)
 
 ## 🛠 Built With <a name="built-with"></a>
     HTML
@@ -48,7 +48,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Summer BootCamp 2023]( https://salwa99.github.io/First-Capstone/)
+[Summer BootCamp 2023](  https://salwa99.github.io/Summer-BootCamp/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,4 +133,4 @@ Give a ⭐️ if you like this project!
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
->>>>>>> a66ff50 (Customize readme file)
+
