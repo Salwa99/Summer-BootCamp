@@ -48,7 +48,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Summer BootCamp 2023]( https://salwa99.github.io/First-Capstone/)
+[Summer BootCamp 2023](  https://salwa99.github.io/Summer-BootCamp/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
