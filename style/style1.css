@@ -4,17 +4,37 @@
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+.newtopbar {
+  display: none;
+}
+
+.navmenu-desktop {
+  display: none;
+}
+
+#menu-icon {
+  padding: 5%;
+}
+
 /* mobile menu */
+#logoimage {
+  filter: invert(190%) sepia(23%) saturate(7495%) hue-rotate(346deg) brightness(100%) contrast(102%);
+}
 
 .menuformobile {
   display: none;
   z-index: 2;
   position: fixed;
+  top: 0;
   height: 100vh;
   flex-direction: column;
   color: white;
   width: 100vw;
-  background-color: rgba(23, 38, 126, 0.735);
+  background-color: rgba(238, 63, 63, 0.735);
 }
 
 .closeicon {
@@ -30,10 +50,9 @@
 
 .mobile-menu li {
   font-weight: 600;
-  color: rgb(190, 181, 181);
+  color: white;
   list-style: none;
   font-size: 2.3rem;
-  border-bottom: 2px solid rgb(180, 173, 173);
   width: 50%;
   padding: 0;
   margin-bottom: 20%;
@@ -42,10 +61,7 @@
 
 .mobile-menu a {
   text-decoration: none;
-}
-
-.links:hover {
-  color: aqua;
+  color: white;
 }
 
 .top-menu a {
@@ -53,18 +69,7 @@
   font-size: 1.2rem;
   font-weight: 800;
   cursor: pointer;
-}
-
-.top-menu a:visited {
-  color: rgb(255, 255, 255);
-}
-
-.top-menu a:hover {
-  color: aqua;
-}
-
-.mobile-menu li a:visited {
-  color: rgb(190, 181, 181);
+  color: white;
 }
 
 .mobile-menu li:last-child {
@@ -108,7 +113,7 @@
 }
 
 .tittle h3 {
-  color: rgb(18, 159, 214);
+  color: rgb(255, 73, 37);
   text-align: center;
   margin: 10px;
 }
@@ -116,11 +121,11 @@
 .tittle h1 {
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(rgb(4, 0, 255), rgb(71, 185, 230));
+  background-image: url(https://w0.peakpx.com/wallpaper/194/474/HD-wallpaper-red-and-orange-texture-red-aesthetic.jpg);
   color: transparent;
   background-position: center left;
   text-align: center;
-  font-weight: 950;
+  font-weight: 900;
 }
 
 .headline img {
@@ -128,6 +133,7 @@
 }
 
 .headline2 {
+  padding: 5%;
   color: rgb(77, 74, 70);
   text-align: center;
   display: flex;
@@ -159,8 +165,8 @@
 
 hr {
   width: 9%;
-  border: 1px solid  rgb(24, 135, 209);
-  margin: 3% 50%;
+  border: 1px solid  rgb(255, 73, 37);
+  margin: 2% auto;
 }
 
 .boot-image {
@@ -171,95 +177,88 @@ hr {
   margin: 5%;
 }
 
-.past-camp {
+.past_bootcamps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 7%;
+  text-align: center;
+}
+
+.past_bootcamps p {
+  margin: 5% 3%;
+  color: rgb(100, 100, 100);
+  font-size: 13px;
+}
+
+.bootcampphotos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.img-all {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  margin: 9%;
-}
-
-.image-container1 {
-  background-image: url("./images/pic1.jpg");
-  background-repeat: no-repeat;
+.firstphoto {
+  width: 80vw;
+  height: 23vh;
+  background: url('/style/images/pic1.jpg');
+  box-shadow: inset -100vw -100vh rgba(252, 3, 3, 0.594);
   background-size: cover;
-  width: 100%;
-  height: 20vh;
-  margin: 5%;
-  box-shadow: inset -100vw -100vh rgb(18, 159, 214, 0.5);
-  cursor: pointer;
+  margin: 3%;
+  transition: all 0.5s;
 }
 
-.image-container1 h3 {
-  font-size: 1.6rem;
-  margin: 0 10%;
-  color: white;
-  text-align: center;
-}
-
-.image-container1 p {
-  width: 100%;
-  color: white;
-  text-align: center;
-}
-
-.image-container2 {
-  background-image: url("./images/pic2.jpg");
-  background-repeat: no-repeat;
+.secondphoto {
+  width: 80vw;
+  height: 23vh;
+  background: url('/style/images/pic2.jpg');
   background-size: cover;
-  width: 100%;
-  height: 20vh;
-  margin: 5%;
-  box-shadow: inset -100vw -100vh rgb(18, 159, 214, 0.5);
-  cursor: pointer;
+  box-shadow: inset -100vw -100vh rgba(252, 3, 3, 0.594);
+  margin: 3% 0 6% 0;
+  transition: all 0.5s;
 }
 
-.image-container2 h3 {
-  font-size: 1.6rem;
-  margin: 0 10%;
-  color: white;
-  text-align: center;
-}
-
-.image-container2 p {
-  width: 100%;
-  color: white;
-  text-align: center;
-}
-
-.image-content {
+.past {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
+}
+
+.past h2 {
+  font-weight: 800;
+  color: white;
+}
+
+.past p {
+  color: white;
+}
+
+.past:hover {
+  box-shadow: none;
 }
 
 .partner {
   display: flex;
   flex-direction: column;
-  border: 2px solid wheat;
+  align-items: center;
   background-color: #434344;
   margin-top: 5%;
-  align-items: center;
 }
 
 .partner h2 {
   text-align: center;
-  color: rgb(82, 155, 240);
-  margin-top: 3%;
+  color: white;
+  margin: 3%;
   font-weight: bolder;
 }
 
 .partner-corporation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 50px;
-  margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 2% 0;
+  padding: 3%;
 }
 
 .partner-corporation h3 {
@@ -277,94 +276,102 @@ hr {
 .logo-rights {
   display: flex;
   flex-direction: row;
-  margin: 7%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2%;
 }
 
 .logo-rights img {
-  width: 45%;
+  width: 40%;
 }
 
 .logo-rights p {
+  color: #434344;
   width: 60%;
   height: 50px;
-  margin-top: 15%;
-  font-weight: bolder;
+  font-size: 0.85rem;
 }
 
 /* media query */
 
 @media all and (min-width: 768px) {
   .top {
-    background: rgb(37, 36, 36);
     display: flex;
-    align-items: center;
   }
 
-  ul {
+  .newtopbar {
+    background: black;
+    height: 4vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4%;
+  }
+
+  .newtopbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    margin: auto 1%;
+  }
+
+  .newtopbar i {
+    font-size: 1.2rem;
+    margin-left: 1%;
+  }
+
+  .navmenu-desktop {
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.5px solid rgb(230, 230, 230);
+    padding: 0 5%;
+  }
+
+  .desktopnav {
     display: flex;
     align-items: center;
     margin-left: auto;
   }
 
-  .top ul {
-    list-style: none;
-    width: 10%;
-    margin-right: 10%;
-  }
-
-  li a {
+  #sitelogo {
     width: 20%;
-    font-weight: 600;
-    font-size: 1.2rem;
+  }
+
+  .navmenu-desktop img {
+    width: 55%;
+  }
+
+  .desktopnav a {
     text-decoration: none;
-    color: #344563;
-    transition: 0.4s;
+    color: black;
+    font-weight: 400;
   }
 
-  .top a {
-    color: rgb(255, 255, 255);
-    cursor: pointer;
+  #activelink {
+    color: rgb(255, 73, 37);
   }
 
-  .headline {
-    margin: 0;
-    padding: 0;
-    background-image: none;
+  .desktopnav a:hover {
+    color: rgb(255, 73, 37);
   }
 
-  .navbar {
-    display: flex;
-  }
-
-  .navbar i {
-    display: none;
-  }
-
-  #logo {
-    width: 35%;
-  }
-
-  .desktop-menu {
-    display: flex;
-    width: 80vw;
-    justify-content: space-around;
-  }
-
-  .desktop-menu img {
-    width: 50%;
-  }
-
-  li {
+  .desktopnav li {
+    margin-right: 2rem;
     list-style: none;
-    margin: 6%;
   }
 
-  li a:hover {
-    color: rgb(69, 191, 221);
+  .desktopnav button {
+    background: transparent;
+    border: 4px solid rgb(255, 73, 37);
+    padding: 7% 10%;
+    width: 10vw;
+    color: rgb(255, 73, 37);
   }
 
-  #active {
-    color: rgb(16, 68, 212) !important;
+  .desktopnav button:hover {
+    background: rgb(255, 73, 37);
+    color: white;
   }
 
   .compaign {
@@ -376,7 +383,7 @@ hr {
     border: 2px solid rgb(18, 208, 233);
   }
 
-  .tittle h3 {
+  #menu-icon {
     display: none;
   }
 
@@ -395,14 +402,13 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 right;
-    padding: 5%;
   }
 
   .headline-desc2 {
-    width: 45vw;
-    font-size: 1.5rem;
+    margin: 0 10%;
+    font-size: 1rem;
     color: #57585a;
-    padding: 2%;
+    padding: 4% 10%;
   }
 
   .headline2 .p {
@@ -449,19 +455,22 @@ hr {
     width: 17%;
     margin: 2%;
     padding: 2% 15%;
-    border: 2px solid rgb(224, 221, 221);
+    border: 1px solid rgb(224, 221, 221);
   }
 
-  .past-camp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .past_bootcamps p {
+    margin: 3%;
+    font-size: 1rem;
   }
 
-  .img-all {
-    display: flex;
+  .bootcampphotos {
     flex-direction: row;
-    margin: 0;
+    align-items: baseline;
+  }
+
+  .past {
+    width: 40vw;
+    height: 35vh;
   }
 
   .miage-container1,
@@ -498,5 +507,13 @@ hr {
     color: white;
     margin: 0;
     padding: 0;
+  }
+
+  main {
+    filter: blur(0) !important;
+  }
+
+  .menuformobile {
+    display: none !important;
   }
 }

@@ -22,7 +22,7 @@
                 <li><a><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a>Logout</a></li>
                 <li><a>Mypage</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Morocco">morocco</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Morocco">Morocco</a></li>
             </ul>
         </div>
         <ul class="mobile-menu">
@@ -35,31 +35,37 @@
     </div>
 <!-- End -->
 
-    <header class="top">
-        <ul>
-            <li><a><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a>Logout</a></li>
-            <li><a>Mypage</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Morocco">Morocco</a></li>
-        </ul>
+    <header>
+        <div class="newtopbar">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="">Logout</a>
+            <a href="">Contact</a>
+            <a href="">Morocco</a>
+        </div>
+        <nav class="navmenu-desktop">
+            <a id="sitelogo" href="./index.html"><img src="style/images/summer-bootcamp.png" id="logoimage" alt="Logo"></a>
+            <ul class="desktopnav">
+                <a id="activelink" href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./about.html">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Sponsor</li>
+                </a>
+                <a href="">
+                    <li>News</li>
+                </a>
+                <a href=""><button type="button">Campaign</button></a>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars"  onclick="OpenMenu()" id="menu-icon"></i>
+
     </header>
     <main>
     <section class="headline">
-        <nav class="navbar">
-            <i class="fa-solid fa-bars"  onclick="OpenMenu()" id="menu-icon"></i>
-            <div class="desktop-menu">
-                   <a id="logo" href="./index.html"> <img src="style/images/logo.png" alt="logo"></a>
-                <ul>
-                    <li><a href="./about.html">About</a> </li>
-                    <li><a href="#">Program</a> </li>
-                    <li><a href="#">Join</a> </li>
-                    <li><a href="#">Contact</a> </li>
-                    <li><a href="#" class="compaign">Compaign</a> </li>
-                </ul>
-            </div>
-        </nav>
-
         <div class="tittle">
             <h3>"Hello! Coding Amateur"</h3>
             <h1>SUMMER CRASH BOOTCAMP 2023</h1>
@@ -79,48 +85,48 @@
             </h3>
             <hr>
             <section class="container2">
-            <div class="box1">
+
                 <div class="wrap">
                     <i class="fa-solid fa-cloud"></i>
                      <h3>Cloud</h3>
                 
                     <p>The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers</p>
                 </div>
-            </div>
 
-            <div class="box2">
+
+
                 <div class="wrap">
                     <i class="fa-brands fa-node"></i>
                      <h3>Node JS</h3>
                 
                     <p>The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers</p>
                 </div>
-            </div>
 
-            <div class="box3">
+
+
                 <div class="wrap">
                     <i class="fa-brands fa-docker"></i>
                      <h3>Docker</h3>
                      <p>The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers</p>
                 </div>
-            </div>
+
            
 
-            <div class="box4">
+
                 <div class="wrap">
                     <i class="fa-solid fa-database"></i>
                      <h3>DataBase</h3>
                      <p>The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers</p>
                 </div>
-            </div>
 
-            <div class="box5">
+
+
                 <div class="wrap">
                     <i class="fa-solid fa-code-branch"></i>
                      <h3>Grapghs</h3>
                      <p>The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers</p>
                 </div>
-            </div>
+
         </section>
             <a class="link-program">SEE THE WHOLE PROGRAM</a>
             <button class="button">Join our Crash Summer Course</button>
@@ -155,7 +161,7 @@
         </div>
 
         <div class="logo-rights">
-            <img src="style/images/logo.png" alt="creative-common">
+            <img src="style/images/summer-bootcamp.png" id="logoimage" alt="creative-common">
             <p>@2023 summer BootCamp Some rights reserved</p>
         </div>
     </footer>

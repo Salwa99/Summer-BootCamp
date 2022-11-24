@@ -4,7 +4,26 @@
   padding: 0;
 }
 
+.newtopbar {
+  display: none;
+}
+
+.navmenu-desktop {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#menu-icon {
+  padding: 5%;
+}
+
 /* mobile menu */
+#logoimage {
+  filter: invert(190%) sepia(23%) saturate(7495%) hue-rotate(346deg) brightness(100%) contrast(102%);
+}
 
 .menuformobile {
   display: none;
@@ -14,7 +33,7 @@
   flex-direction: column;
   color: white;
   width: 100vw;
-  background-color: rgba(23, 38, 126, 0.735);
+  background-color: rgba(238, 63, 63, 0.735);
 }
 
 .closeicon {
@@ -30,7 +49,7 @@
 
 .mobile-menu li {
   font-weight: 600;
-  color: rgb(190, 181, 181);
+  color: white;
   list-style: none;
   font-size: 2.3rem;
   width: 50%;
@@ -44,30 +63,12 @@
   font-size: 1.2rem;
   font-weight: 800;
   cursor: pointer;
+  color: white;
 }
 
 .mobile-menu a {
   text-decoration: none;
-}
-
-.links:hover {
-  color: aqua;
-}
-
-.top-menu a:hover {
-  color: aqua;
-}
-
-.top-menu a:visited {
-  color: rgb(255, 255, 255);
-}
-
-.mobile-menu li a:visited {
-  color: rgb(190, 181, 181);
-}
-
-.mobile-menu li:last-child {
-  border-bottom: none;
+  color: white;
 }
 
 .top-menu ul {
@@ -102,13 +103,13 @@
 }
 
 .tittle h3 {
-  color: rgb(18, 159, 214);
+  color: rgb(255, 73, 37);
 }
 
 .tittle h1 {
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(rgb(4, 0, 255), rgb(71, 185, 230));
+  background-image: url(https://w0.peakpx.com/wallpaper/194/474/HD-wallpaper-red-and-orange-texture-red-aesthetic.jpg);
   color: transparent;
   background-position: center left;
   font-size: 2.5rem;
@@ -116,9 +117,9 @@
 }
 
 .headline-desc {
-  color: rgb(0, 0, 0);
+  color: rgb(97, 97, 97);
   padding: 5%;
-  border: 3px solid white;
+  border: 3px solid rgb(152, 152, 152);
   margin: 2% 0;
 }
 
@@ -134,7 +135,7 @@
 
 hr {
   width: 15%;
-  border: 1px solid rgb(24, 135, 209);
+  border: 1px solid rgb(255, 73, 37);
   margin: 3% 0;
 }
 
@@ -147,29 +148,13 @@ hr {
   border-radius: 3px;
 }
 
-.box1,
-.box2,
-.box3,
-.box4,
-.box5 {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-}
-
 .wrap {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(82, 81, 81, 0.6);
   padding: 5%;
-  margin-bottom: 10px;
-  width: 100%;
-  gap: 28px;
+  margin: 2%;
 }
 
 .container h3,
@@ -179,31 +164,32 @@ p {
 
 .partner-corporation h3 {
   color: #979494;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 .container .wrap h3 {
-  color: rgb(18, 159, 214);
-  font-size: 1.3rem;
+  color: rgb(255, 73, 37);
+  font-size: 0.9rem;
 }
 
 .wrap i {
   color: white;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .wrap p {
   width: 60%;
+  font-size: 0.85rem;
 }
 
 .button {
-  background-color: rgb(18, 159, 214);
+  background-color: rgb(255, 73, 37);
   border: none;
   color: #fff;
-  width: 80%;
-  font-size: 1.2rem;
-  padding: 20px;
+  width: 80vw;
+  font-size: 1rem;
+  padding: 4% 5%;
   margin: 3%;
 }
 
@@ -229,7 +215,7 @@ p {
 
 .speakers .desc {
   font-style: italic;
-  color: rgb(23, 52, 214);
+  color: rgb(255, 73, 37);
 }
 
 .speaker-wrap img {
@@ -249,36 +235,22 @@ p {
 
 .speakers hr {
   width: 9%;
-  border: 1px solid  rgb(24, 135, 209);
+  border: 1px solid  rgb(255, 73, 37);
 }
 
 .speaker-wrap p {
   color: black;
+  font-size: 0.85rem;
 }
 
 .speaker-wrap hr {
   border: 1px solid rgb(179, 175, 175);
 }
 
-/* .speakers .more {
-  text-align: center;
-  width: 80%;
-  padding: 20px;
-  margin: 10px;
-  border: 2px solid rgb(156, 151, 151);
-  color: rgb(68, 67, 67);
-}
-
-.more img {
-  width: 25px;
-  margin-left: 3px;
-} */
-
 .partner {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 2px solid wheat;
   background-color: #434344;
   margin-top: 5%;
   align-items: center;
@@ -287,7 +259,7 @@ p {
 
 .partner h2 {
   text-align: center;
-  color: rgb(82, 155, 240);
+  color: white;
   margin-top: 3%;
   font-weight: bolder;
 }
@@ -309,91 +281,98 @@ p {
 .logo-rights {
   display: flex;
   flex-direction: row;
-  margin: 7%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2%;
 }
 
 .logo-rights img {
-  width: 45%;
+  width: 40%;
 }
 
 .logo-rights p {
   color: #434344;
   width: 60%;
   height: 50px;
-  margin-top: 15%;
-  font-weight: bolder;
+  font-size: 0.85rem;
 }
 
 /* media query */
 
 @media all and (min-width: 768px) {
-  .top {
-    background: rgb(37, 36, 36);
+  .newtopbar {
+    background: black;
+    height: 4vh;
+    color: white;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    padding-right: 4%;
   }
 
-  ul {
+  .newtopbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    margin: auto 1%;
+  }
+
+  .newtopbar i {
+    font-size: 1.2rem;
+    margin-left: 1%;
+  }
+
+  .navmenu-desktop {
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.5px solid rgb(230, 230, 230);
+    padding: 0 5%;
+  }
+
+  .desktopnav {
     display: flex;
     align-items: center;
     margin-left: auto;
   }
 
-  .top ul {
-    list-style: none;
-    width: 10%;
-    margin-right: 10%;
-    color: rgb(255, 255, 255);
-  }
-
-  li a {
+  #sitelogo {
     width: 20%;
-    font-weight: 600;
-    font-size: 1.2rem;
+  }
+
+  .navmenu-desktop img {
+    width: 55%;
+  }
+
+  .desktopnav a {
     text-decoration: none;
-    color: #344563;
-    transition: 0.4s;
+    color: black;
+    font-weight: 400;
   }
 
-  .top a {
-    color: rgb(255, 255, 255);
-    cursor: pointer;
+  #activelink {
+    color: rgb(255, 73, 37);
   }
 
-  .headline {
-    margin: 0;
-    padding: 0;
+  .desktopnav a:hover {
+    color: rgb(255, 73, 37);
   }
 
-  .navbar {
-    display: flex;
-  }
-
-  .navbar i {
-    display: none;
-  }
-
-  #logo {
-    width: 35%;
-  }
-
-  .desktop-menu {
-    display: flex;
-    width: 80vw;
-    justify-content: space-around;
-  }
-
-  .desktop-menu img {
-    width: 50%;
-  }
-
-  li {
+  .desktopnav li {
+    margin-right: 2rem;
     list-style: none;
-    margin: 6%;
   }
 
-  li a:hover {
-    color: rgb(69, 191, 221);
+  .desktopnav button {
+    background: transparent;
+    border: 4px solid rgb(255, 73, 37);
+    padding: 7% 10%;
+    width: 10vw;
+    color: rgb(255, 73, 37);
+  }
+
+  .desktopnav button:hover {
+    background: rgb(255, 73, 37);
+    color: white;
   }
 
   .compaign {
@@ -419,13 +398,11 @@ p {
   }
 
   .headline-desc {
-    width: 35%;
-    margin: 5%;
-    padding: 0;
+    width: 50vw;
   }
 
   .date {
-    margin: 0 9%;
+    margin: 7%;
   }
 
   .date h3 {
@@ -440,8 +417,10 @@ p {
     margin-top: 4%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 60vh;
+
+    /* align-items: center; */
+
+    /* height: 60vh; */
   }
 
   .container2 {
@@ -453,14 +432,22 @@ p {
 
   .wrap {
     display: flex;
+    padding: 2%;
+    border-radius: 2px;
+    margin: 1%;
     flex-direction: column;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    justify-content: space-around;
   }
 
   .wrap:hover {
     transform: scale(1.1);
-    border: 2px solid rgb(23, 185, 197);
+    border: 2px solid rgba(154, 154, 154, 0.466);
+  }
+
+  .wrap p {
+    width: auto;
   }
 
   .container h3 {
@@ -476,20 +463,21 @@ p {
     display: none;
   }
 
+  #menu-icon {
+    display: none;
+  }
+
   .link-program {
     display: block;
     color: #fff;
     width: 80%;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    text-decoration: underline;
     padding: 20px;
     margin-top: 3%;
     text-align: center;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
-  }
-
-  .link-program:hover {
-    color: aqua;
   }
 
   .speakers hr {
@@ -542,19 +530,27 @@ p {
   }
 
   .logo-rights {
-    margin: 0 35%;
+    justify-content: center;
     display: flex;
+    padding: 2%;
     align-items: center;
-    gap: 20px;
   }
 
   .logo-rights img {
-    width: 20%;
-    margin: 0;
+    width: 15%;
+    margin-left: 25%;
   }
 
   .logo-rights p {
-    margin-top: 3%;
-    font-size: 1.2rem;
+    margin-left: 5%;
+    font-size: 0.9rem;
+  }
+
+  main {
+    filter: blur(0) !important;
+  }
+
+  .menuformobile {
+    display: none !important;
   }
 }

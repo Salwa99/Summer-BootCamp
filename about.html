@@ -13,14 +13,33 @@
 </head>
 
 <body>
-    <header class="top">
-        <ul>
-            <li><a><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a>Logout</a></li>
-            <li><a>Mypage</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Morocco">morocco</a></li>
-        </ul>
+    <header>
+        <div class="newtopbar">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="">Logout</a>
+            <a href="">Contact</a>
+            <a href="">Morocco</a>
+        </div>
+        <nav class="navmenu-desktop">
+            <a id="sitelogo" href="./index.html"><img src="style/images/summer-bootcamp.png" id="logoimage" alt="Logo"></a>
+            <ul class="desktopnav">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a id="activelink" href="./about.html">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Sponsor</li>
+                </a>
+                <a href="">
+                    <li>News</li>
+                </a>
+                <a href=""><button type="button">Campaign</button></a>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars"  onclick="OpenMenu()" id="menu-icon"></i>
     </header>
 
 <!-- mobile menu -->
@@ -46,21 +65,6 @@
 <!-- End -->
 
 <main>
-    <section class="headline">
-        <nav class="navbar">
-            <i class="fa-solid fa-bars"  onclick="OpenMenu()" id="menu-icon"></i>
-            <div class="desktop-menu">
-                   <a id="logo" id="homeLink" href="./index.html"> <img src="style/images/logo.png" alt="logo"></a>
-                <ul>
-                     <li><a href="./about.html" id="aboutLink" id="active">About</a></li>
-                    <li><a href="#">Program</a> </li>
-                    <li><a href="#">Join</a> </li>
-                    <li><a href="#">Contact</a> </li>
-                    <li><a href="#" class="compaign">Compaign</a> </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
 
     <section class="headline2">
         <div class="tittle">
@@ -78,22 +82,21 @@
             <h2>Summer BootCamp<br class="null"> Crash Courses 2023</h2>
             <hr>
             <p>The course kicks off on June 20 and ends on August 15, 2023.</p>
-            <img class="boot-image" src="style/images/logo.png" alt="">
+            <img class="boot-image" src="style/images/summer-bootcamp.png" id="logoimage" alt="">
         </div>
-        <div class="past-camp">
-            <h3>See the past summer BootCamp</h3>
+        <div class="past-bootcamps">
+            <h2>See the past summer BootCamp</h2>
             <hr>
             <p>Take a look at the last two Summer BootCamp whic took place in Geneva and in Cape Town</p>
-
-            <div class="img-all">
-                <div class="image-container1 image-content">
-                        <h3>2022</h3>
-                        <p>Our BootCamp in Geneva</p>
+            <div class="bootcampphotos">
+                <div class="firstphoto past">
+                    <h2>2022</h2>
+                    <p>Our Bootcamp in Geneva</p>
                 </div>
-                <div class="image-container2 image-content">
-                        <h3>2021</h3>
-                        <p>Our BootCamp in Cape Town</p>
-                </div> 
+                <div class="secondphoto past">
+                    <h2>2021</h2>
+                    <p>Our Bootcamp in Cape Town</p>
+                </div>
             </div>
         </div> 
     </section>
@@ -114,7 +117,7 @@
         </div>
 
         <div class="logo-rights">
-            <img src="style/images/logo.png" alt="creative-common">
+            <img src="style/images/summer-bootcamp.png" id="logoimage" alt="creative-common">
             <p>@2023 summer BootCamp Some rights reserved</p>
         </div>
     </footer>
