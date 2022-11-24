@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>First Capstone</title>
+</head>
+<body>
+
+    <!-- mobile menu -->
+    <div class="menuformobile">
+        <img class="closeicon" onclick="CloseMenu()" src="style/images/Icon.png" alt="close_icon">
+        <div class="top-menu">
+            <ul>
+                <li><a><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a>Logout</a></li>
+                <li><a>Mypage</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Morocco">morocco</a></li>
+            </ul>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="./index.html" class="links" id="homeLink" >Home</a></li>
+            <li><a href="./about.html" class="links" id="aboutLink" >About</a></li>
+            <li><a id="programLink" class="links">Program</a></li>
+            <li><a id="joinLink" class="links">Join</a></li>
+            <li><a id="contactLink" class="links">Contact</a></li>
+        </ul>
+    </div>
+<!-- End -->
+
+    <header class="top">
+        <ul>
+            <li><a><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a>Logout</a></li>
+            <li><a>Mypage</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Morocco">Morocco</a></li>
+        </ul>
+    </header>
+    <main>
+    <section class="headline">
+        <nav class="navbar">
+            <i class="fa-solid fa-bars"  onclick="OpenMenu()" id="menu-icon"></i>
+            <div class="desktop-menu">
+                   <a id="logo" href="./index.html"> <img src="style/images/logo.png" alt="logo"></a>
+                <ul>
+                    <li><a href="./about.html">About</a> </li>
+                    <li><a href="#">Program</a> </li>
+                    <li><a href="#">Join</a> </li>
+                    <li><a href="#">Contact</a> </li>
+                    <li><a href="#" class="compaign">Compaign</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="tittle">
+            <h3>"Hello! Coding Amateur"</h3>
+            <h1>SUMMER CRASH BOOTCAMP 2023</h1>
+            <p class="headline-desc">Our summer Bootcamp is coming up with new wonderful features,  data science, and a full-stack program. Join over 1000 coders from several countries is taking place in June, in Canada</p>
+        </div>
+
+        <div class="date">
+            <h3>2023.06.05(MON) ~ 9(FRI)</h3>
+            <p class="venue">@ Novotel Melbourne on Collins and more</p>
+        </div>
+    </section>
+
+ 
+        <section class="container">
+            <h3>
+                Main Program
+            </h3>
+            <hr>
+            <section class="container2">
+            <div class="box1">
+                <div class="wrap">
+                    <i class="fa-solid fa-cloud"></i>
+                     <h3>Cloud</h3>
+                
+                    <p>The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers</p>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="wrap">
+                    <i class="fa-brands fa-node"></i>
+                     <h3>Node JS</h3>
+                
+                    <p>The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers</p>
+                </div>
+            </div>
+
+            <div class="box3">
+                <div class="wrap">
+                    <i class="fa-brands fa-docker"></i>
+                     <h3>Docker</h3>
+                     <p>The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers</p>
+                </div>
+            </div>
+           
+
+            <div class="box4">
+                <div class="wrap">
+                    <i class="fa-solid fa-database"></i>
+                     <h3>DataBase</h3>
+                     <p>The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers</p>
+                </div>
+            </div>
+
+            <div class="box5">
+                <div class="wrap">
+                    <i class="fa-solid fa-code-branch"></i>
+                     <h3>Grapghs</h3>
+                     <p>The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers</p>
+                </div>
+            </div>
+        </section>
+            <a class="link-program">SEE THE WHOLE PROGRAM</a>
+            <button class="button">Join our Crash Summer Course</button>
+    </section>
+
+
+    <section class="speakers">
+        <h3>Featured Speakers</h3>
+        <hr>
+
+        <div class="speakers-elt">
+        
+        </div>
+            <!-- <div class="more">MORE <img src="style/images/arrow-down.png" alt=""></div> -->
+    </section>
+</div>
+  
+
+    <footer>
+        <div class="partner">
+                <h2>Partner</h2>
+                <hr>
+
+            <div class="partner-corporation">
+                    <h3><i class="fab fa-google"></i>Google</h3>
+                    
+                    <h3><i class="fa-brands fa-linux"></i>Linux</h3>
+                    <h3><i class="fa-brands fa-airbnb"></i>airbnb</h3>
+                    <h3><i class="fab fa-microsoft"></i>Microsoft</h3>
+                    <h3><i class="fa-brands fa-facebook"></i>FaceBook</h3>
+            </div>  
+        </div>
+
+        <div class="logo-rights">
+            <img src="style/images/logo.png" alt="creative-common">
+            <p>@2023 summer BootCamp Some rights reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</main>
+</body>
+</html>
