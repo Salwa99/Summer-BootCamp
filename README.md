@@ -34,7 +34,7 @@
 
 # 📖 Capstone-Project: Summer BootCamp 2023 <a name="about-project"></a>
 
-**[Capstone-Project: Summer BootCamp 2023]** is about crash courses in Computer Science during Summer. People can visit the website to see the details of the program.
+**Capstone-Project: Summer BootCamp 2023** is about crash courses in Computer Science during Summer. People can visit the website to see the details of the program.
 
 [Loom Video Presentation](https://www.loom.com/share/8265989651e04953b74b70498aef592e)
 
